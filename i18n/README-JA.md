@@ -36,7 +36,19 @@
     npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234
     ```
 
-3. [http://localhost:3000](http://localhost:3000) を開く
+    特定のポートを指定
+
+    ```bash
+    npx flowise start --PORT=3333
+    ```
+
+    ユーザー名、パスワード、特定のポートを指定
+
+    ```bash
+    npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234 --PORT=3333
+    ```
+
+3. [http://localhost:3000](http://localhost:3000) または指定したポート（例：[http://localhost:3333](http://localhost:3333)）を開く
 
 ## 🐳 Docker
 
@@ -149,18 +161,6 @@ Flowise は、インスタンスを設定するためのさまざまな環境変
 
 -   [AWS](https://docs.flowiseai.com/deployment/aws)
 -   [Azure](https://docs.flowiseai.com/deployment/azure)
--   [Digital Ocean](https://docs.flowiseai.com/deployment/digital-ocean)
--   [GCP](https://docs.flowiseai.com/deployment/gcp)
--   <details>
-      <summary>その他</summary>
-
-    -   [Railway](https://docs.flowiseai.com/deployment/railway)
-
-        [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pn4G8S?referralCode=WVNPD9)
-
-    -   [Render](https://docs.flowiseai.com/deployment/render)
-
-        [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://docs.flowiseai.com/deployment/render)
 
     -   [Hugging Face Spaces](https://docs.flowiseai.com/deployment/hugging-face)
 

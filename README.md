@@ -36,7 +36,19 @@ Download and Install [NodeJS](https://nodejs.org/en/download) >= 18.15.0
     npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234
     ```
 
-3. Open [http://localhost:3000](http://localhost:3000)
+    With specific port
+
+    ```bash
+    npx flowise start --PORT=3333
+    ```
+
+    With username & password and specific port
+
+    ```bash
+    npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234 --PORT=3333
+    ```
+
+3. Open [http://localhost:3000](http://localhost:3000) or the specified port (e.g. [http://localhost:3333](http://localhost:3333))
 
 ## 🐳 Docker
 
@@ -120,10 +132,17 @@ Flowise has 3 different modules in a single mono repository.
 5.  Start the app:
 
     ```bash
-    pnpm start
+    pnpm start -- --port 8000
+    ```
+
+    ```bash
+    pnpm start -- --port 3333
+    npx flowise start --PORT=3333
     ```
 
     You can now access the app on [http://localhost:3000](http://localhost:3000)
+
+    You can now access the app on [http://localhost:3333](http://localhost:3333)
 
 6.  For development build:
 
